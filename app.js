@@ -98,7 +98,7 @@ function ensureApiReady() {
     });
   }
 }
-function code() { const a = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; return 'RISE-' + Array.from({ length: 4 }, () => a[Math.floor(Math.random() * a.length)]).join(''); }
+function code() { const a = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; return 'SAGACIDADE-' + Array.from({ length: 4 }, () => a[Math.floor(Math.random() * a.length)]).join(''); }
 function invite() { const u = new URL(location.href); u.search = ''; u.searchParams.set('room', S.code); return u.toString(); }
 async function copy(t, m = 'Copiado!') { try { await navigator.clipboard.writeText(t); } catch { const x = document.createElement('textarea'); x.value = t; document.body.appendChild(x); x.select(); document.execCommand('copy'); x.remove(); } toast(m); }
 function conn(on, text) {
